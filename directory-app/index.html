@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Directory</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Directory</h1>
+        <input type="text" id="search" placeholder="Search by name, department, or location">
+        <button onclick="searchContacts()">Search</button>
+        <div id="contact-list"></div>
+        <button onclick="showAddContactForm()">Add Contact</button>
+        <div id="add-contact-form" style="display:none;">
+            <h2>Add Contact</h2>
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="department" placeholder="Department">
+            <input type="text" id="location" placeholder="Location">
+            <button onclick="addContact()">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
